@@ -56,7 +56,7 @@ elif op == "cos":
     result = math.cos(a)
 
 elif op == "tan":
-    if a==90:
+    if a == 90*math.pi/180:
         result = "It is undefined."
     else:
         result = math.tan(a)
@@ -65,7 +65,7 @@ elif op == "cot":
     if a==0:
         result = "It is undefined."
     else:
-        result = math.cot(a)
+        result = 1/(math.tan(a))
 
 elif op == "log":
     if a < 0:
